@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{94C819D0-BA20-4632-A0EA-5F33AB3A6208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryChargingNotifier.Android", "src\BatteryChargingNotifier.Android\BatteryChargingNotifier.Android.csproj", "{8F42DB37-7678-4A30-B461-F654DA80C8C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryChargingNotifier.iOS", "src\BatteryChargingNotifier.iOS\BatteryChargingNotifier.iOS.csproj", "{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryChargingNotifier", "src\BatteryChargingNotifier\BatteryChargingNotifier.csproj", "{6F242FDD-40B9-4546-A4AB-351191D9F507}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A}.Release|iPhone.Build.0 = Release|iPhone
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6F242FDD-40B9-4546-A4AB-351191D9F507}.Release|iPhone.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D3D87D1-A697-4600-BBA2-823846CC2879}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F42DB37-7678-4A30-B461-F654DA80C8C1} = {94C819D0-BA20-4632-A0EA-5F33AB3A6208}
+		{EEE49183-DCFD-4166-8C46-02D0E8CBD30A} = {94C819D0-BA20-4632-A0EA-5F33AB3A6208}
+		{6F242FDD-40B9-4546-A4AB-351191D9F507} = {94C819D0-BA20-4632-A0EA-5F33AB3A6208}
+	EndGlobalSection
+EndGlobal
