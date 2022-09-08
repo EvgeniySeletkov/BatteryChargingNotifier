@@ -1,4 +1,6 @@
-﻿using Prism;
+﻿using BatteryChargingNotifier.ViewModels;
+using BatteryChargingNotifier.Views;
+using Prism;
 using Prism.Ioc;
 using Prism.Unity;
 using Xamarin.Forms;
@@ -16,14 +18,15 @@ namespace BatteryChargingNotifier
         {
             // Navigation.
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<BatteryPage, BatteryPageViewModel>();
+            containerRegistry.RegisterForNavigation<SettingsPage, SettingsPageViewModel>();
         }
 
         protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPage)}");
+            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(BatteryPage)}");
         }
     }
 }

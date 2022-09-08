@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<pages:BaseContentPage xmlns:pages="clr-namespace:BatteryChargingNotifier.Views"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+                       xmlns:viewmodels="clr-namespace:BatteryChargingNotifier.ViewModels"
+                       x:Class="BatteryChargingNotifier.Views.BatteryPage"
+                       x:DataType="viewmodels:BatteryPageViewModel">
+
+    <Grid RowDefinitions="60, *"
+          RowSpacing="0">
+
+        <!-- NAVBAR -->
+        <Grid RowSpacing="0"
+              ColumnSpacing="0"
+              Padding="24, 0"
+              BackgroundColor="White">
+
+            <Label HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Battery"
+                   FontSize="Title"
+                   TextColor="Black"/>
+
+            <Frame HasShadow="False"
+                   Padding="0"
+                   HeightRequest="42"
+                   WidthRequest="42"
+                   CornerRadius="21"
+                   BackgroundColor="White"
+                   xct:TouchEffect.PressedBackgroundColor="LightGray"
+                   xct:TouchEffect.AnimationDuration="150"
+                   xct:TouchEffect.Command="{Binding GoToSettingsCommand}"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="CenterAndExpand">
+
+                <Image Source="ic_settings"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+            </Frame>
+
+        </Grid>
+
+        <Label Grid.Row="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="Battery"/>
+
+    </Grid>
+
+</pages:BaseContentPage>

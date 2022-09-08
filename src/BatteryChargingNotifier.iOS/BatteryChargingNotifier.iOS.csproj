@@ -138,12 +138,23 @@
     <PackageReference Include="Prism.Unity.Forms">
       <Version>8.1.97</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>2.0.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BatteryChargingNotifier\BatteryChargingNotifier.csproj">
       <Project>{6F242FDD-40B9-4546-A4AB-351191D9F507}</Project>
       <Name>BatteryChargingNotifier</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_settings.png" />
+    <BundleResource Include="Resources\ic_settings%402x.png" />
+    <BundleResource Include="Resources\ic_settings%403x.png" />
+    <BundleResource Include="Resources\ic_chevron_left.png" />
+    <BundleResource Include="Resources\ic_chevron_left%402x.png" />
+    <BundleResource Include="Resources\ic_chevron_left%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
