@@ -81,6 +81,7 @@
     <Compile Include="Services\LocalNotificationService.cs" />
     <Compile Include="IOSInitializer.cs" />
     <Compile Include="Helpers\UserNotificationCenterDelegate.cs" />
+    <None Include="Info %28copy%29.plist" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
