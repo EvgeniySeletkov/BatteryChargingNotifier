@@ -1,10 +1,13 @@
-﻿using BatteryChargingNotifier.Services.LocalNotification;
+﻿using System.Diagnostics;
+using BatteryChargingNotifier.Services.LocalNotification;
 using UserNotifications;
 
 namespace BatteryChargingNotifier.iOS.Services
 {
     public class LocalNotificationService : ILocalNotificationService
     {
+        #region -- ILocalNotificationService implementation --
+
         public void ShowNotification(string title, string description)
         {
             var notification = new UNMutableNotificationContent
@@ -23,9 +26,11 @@ namespace BatteryChargingNotifier.iOS.Services
             UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) => {
                 if (err != null)
                 {
-                    // Do something with error...
+                    Debug.WriteLine(err);
                 }
             });
         }
+
+        #endregion
     }
 }
